@@ -11,17 +11,16 @@ aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e et
 
 // PARTE 1
 // Creo oggetto studente
-var studente = {
+var oggettoStudente = {
   "nome": "Walter",
   "cognome": "Satriano",
   "eta": 34
 };
 
 // Stampo tutte le proprietà dell'oggetto studente
-for (var key in studente) {
-  console.log(studente[key]);
+for (var key in oggettoStudente) {
+  console.log(oggettoStudente[key]);
 }
-
 
 
 // PARTE 2
@@ -37,8 +36,19 @@ var arrayStudenti = [
 for (var i = 0; i < arrayStudenti.length; i++) {
   console.log(arrayStudenti[i]);
 
-  // creo una variabile di appoggio per verificare ogni singolo studente
+  // creo una variabile di appoggio per poter agire su ogni singolo studente
   var studente = arrayStudenti[i];
   console.log(studente.nome);
   console.log(studente.cognome);
 }
+
+
+// PARTE 3
+// Chiedo all'utente di inserire rispettivamente nome, cognome ed età
+var nomeUtente = prompt("Inserisci il tuo nome");
+var cognomeUtente = prompt("Inserisci il tuo cognome");
+var etaUtente = parseInt(prompt("Inserisci la tua età"));
+
+// Inserisco i nuovi dati nell'array di oggetti
+arrayStudenti.push(nomeUtente, cognomeUtente, etaUtente);
+console.log("nome, cognome ed eta inseriti dall'utente " , arrayStudenti);
