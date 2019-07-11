@@ -50,5 +50,5 @@ var cognomeUtente = prompt("Inserisci il tuo cognome");
 var etaUtente = parseInt(prompt("Inserisci la tua età"));
 
 // Inserisco i nuovi dati nell'array di oggetti
-arrayStudenti.push(nomeUtente, cognomeUtente, etaUtente);
+arrayStudenti.push({"nome": nomeUtente, "cognome": cognomeUtente, "Eta": etaUtente});
 console.log("nome, cognome ed eta inseriti dall'utente " , arrayStudenti);
